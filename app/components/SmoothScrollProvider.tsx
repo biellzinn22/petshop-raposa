@@ -28,7 +28,7 @@ export function SmoothScrollProvider({ children }: { children: React.ReactNode }
       // Ignore if pinching or horizontal scrolling
       if (e.ctrlKey || Math.abs(e.deltaX) > Math.abs(e.deltaY)) return;
 
-      e.preventDefault();
+      // e.preventDefault(); // passive: true avoids blocking native scroll
 
       const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
       
@@ -69,7 +69,7 @@ export function SmoothScrollProvider({ children }: { children: React.ReactNode }
       }
     };
 
-    window.addEventListener("wheel", handleWheel, { passive: false });
+    window.addEventListener("wheel", handleWheel, { passive: true });
     window.addEventListener("scroll", handleScroll, { passive: true });
 
     return () => {
@@ -101,7 +101,7 @@ export function SmoothScrollProvider({ children }: { children: React.ReactNode }
 
     const startY = window.scrollY;
     const distance = targetY - startY;
-    const duration = 1200; // 1200ms
+    const duration = typeof window !== "undefined" && window.innerWidth < 640 ? 600 : 1200; // 1200ms
     let startTime: number | null = null;
 
     const easeInOutCubic = (t: number) => {

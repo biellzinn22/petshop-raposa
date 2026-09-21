@@ -27,7 +27,7 @@ export default function LocationSection() {
               <h2 className="text-4xl lg:text-5xl font-extrabold text-white mt-4 leading-[1.05] tracking-tight">
                 Venha nos <span className="text-orange">visitar</span>
               </h2>
-              <p className="text-lg text-white/70 mt-4 leading-relaxed">Estamos localizados em São Brás, com fácil acesso, ampla variedade de produtos, rações e o melhor atendimento de Belém.</p>
+              <p className="text-base text-white/70 mt-3 leading-relaxed">Estamos em São Brás, com fácil acesso e o melhor atendimento de Belém.</p>
             </motion.div>
 
             <div className="space-y-6">
@@ -59,9 +59,9 @@ export default function LocationSection() {
                 </div>
                 <div>
                   <h3 className="font-bold text-white text-lg">Horário de Funcionamento</h3>
-                  <div className="text-white/75 text-sm space-y-1 mt-1">
-                    <p>Segunda a Sábado: 08:00 às 18:30</p>
-                    <p className="text-orange-300">Entrega rápida disponível em Belém</p>
+                  <div className="text-white/75 text-sm space-y-0.5 mt-1">
+                    <p>Seg a Sáb: 08h às 18:30</p>
+                    <p className="text-orange-300">Entrega rápida em Belém</p>
                   </div>
                 </div>
               </motion.div>

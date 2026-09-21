@@ -34,8 +34,8 @@ export default function Footer() {
   return (
     <footer className="bg-charcoal text-white pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-          <div className="lg:col-span-1">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
+          <div className="md:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
               <div className="relative w-12 h-12 rounded-xl bg-white p-1 overflow-hidden">
                 <Image src="/imagens/logo-modelo-1.png" alt="Pet Shop Raposo Logo" width={48} height={48} className="object-contain w-full h-full" />
@@ -61,16 +61,6 @@ export default function Footer() {
                   <a href={item.href} onClick={(e) => handleNavClick(e, item.href)} className="text-white/70 hover:text-orange transition-colors text-sm cursor-pointer">{item.label}</a>
                 </li>
               ))}
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-bold text-lg mb-4 text-orange-200">Serviços</h4>
-            <ul className="space-y-3 text-white/70 text-sm">
-              <li>Banho & Hidratação</li>
-              <li>Tosa Profissional</li>
-              <li>Atendimento Veterinário</li>
-              <li>Pet Shop & Farmácia</li>
             </ul>
           </div>
 

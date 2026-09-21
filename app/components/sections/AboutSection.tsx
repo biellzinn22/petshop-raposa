@@ -98,12 +98,8 @@ export default function AboutSection() {
               </h2>
             </div>
 
-            <p className="text-base text-charcoal-light leading-relaxed">
-              O <strong className="text-charcoal">Pet Shop Raposo</strong> nasceu de uma paixão genuína pelos animais. Sabemos que seu pet não é apenas um bichinho de estimação — ele é um membro precioso da sua família.
-            </p>
-
-            <p className="text-base text-charcoal-light leading-relaxed">
-              Por isso, criamos um refúgio acolhedor onde a segurança, a diversão e os cuidados com a saúde andam sempre juntos. Cada banho vira momento de festa e cada visita é recebida com carinho e petiscos.
+            <p className="text-sm sm:text-base text-charcoal-light leading-relaxed">
+              O <strong className="text-charcoal">Pet Shop Raposo</strong> nasceu de paixão pelos pets. Um refúgio acolhedor com carinho, saúde e diversão.
             </p>
 
             <div className="space-y-3 pt-2">
@@ -121,7 +117,6 @@ export default function AboutSection() {
                   </div>
                   <div>
                     <h3 className="font-bold text-charcoal text-base sm:text-lg">{feature.title}</h3>
-                    <p className="text-sm text-charcoal-light mt-0.5 leading-relaxed">{feature.description}</p>
                   </div>
                 </motion.div>
               ))}

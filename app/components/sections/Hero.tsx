@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { ArrowRight, Sparkles, Heart, Shield } from "lucide-react";
+import { ArrowRight, Sparkles, Shield } from "lucide-react";
 import { useLenis } from "../SmoothScrollProvider";
 
 const WHATSAPP_LINK = "https://wa.me/559130385560?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20atendimento%20para%20meu%20pet!%20";
@@ -67,8 +67,8 @@ export default function Hero() {
             </span>
           </motion.h1>
 
-          <motion.p variants={fadeUp} className="text-lg text-charcoal-light max-w-xl leading-relaxed text-balance">
-            Mais que um pet shop, somos o cantinho favorito do seu peludo. Banhos relaxantes, tosa estilosa, carinho sem limites e um time que trata seu pet como realeza.
+          <motion.p variants={fadeUp} className="text-base sm:text-lg text-charcoal-light max-w-xl leading-relaxed text-balance">
+            Banhos, tosa e carinho para o seu melhor amigo. Atendimento de excelência em Belém.
           </motion.p>
 
           <motion.div variants={fadeUp} className="flex flex-wrap items-center gap-4 pt-2">
@@ -91,31 +91,6 @@ export default function Hero() {
             </a>
           </motion.div>
 
-          <motion.div variants={fadeUp} className="flex flex-wrap items-center gap-6 pt-4 border-t border-orange-muted">
-            <div className="flex items-center gap-3">
-              <div className="flex -space-x-3">
-                <span className="w-10 h-10 rounded-full bg-orange border-2 border-white flex items-center justify-center text-white text-base shadow-sm" aria-hidden="true">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M10 5.172C10 3.782 8.423 2.679 6.5 3c-2.823.47-4.113 6.006-4 7 .08.703 1.725 1.722 3.656 1 1.261-.472 1.855-1.24 2.344-2.5"/><path d="M14.267 5.172c0-1.39 1.577-2.493 3.5-2.172 2.823.47 4.113 6.006 4 7-.08.703-1.725 1.722-3.656 1-1.261-.472-1.855-1.24-2.344-2.5"/><path d="M8 14v.5"/><path d="M16 14v.5"/><path d="M11.25 16.25h1.5L12 17l-.75-.75Z"/><path d="M4.42 11.247A13.152 13.152 0 0 0 4 14.556C4 18.728 7.582 21 12 21s8-2.272 8-6.444c0-1.061-.162-2.2-.493-3.309m-9.243-6.082A8.801 8.801 0 0 1 12 5c.78 0 1.5.108 2.161.306"/><path d="M19 17a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/></svg>
-                </span>
-                <span className="w-10 h-10 rounded-full bg-orange-light border-2 border-white flex items-center justify-center text-white text-base shadow-sm" aria-hidden="true">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 5c.67 0 1.35.09 2 .26 1.78-2 5.03-2.84 6.42-2.26 1.4.58-.42 7-.42 7 .57 1.07 1 2.24 1 3.44C21 17.9 16.97 21 12 21s-9-3.1-9-7.56c0-1.25.5-2.4 1-3.44 0 0-1.89-6.42-.5-7 1.39-.58 4.72.23 6.5 2.23A9.04 9.04 0 0 1 12 5Z"/><path d="M8 14v.5"/><path d="M16 14v.5"/><path d="M11.25 16.25h1.5L12 17l-.75-.75Z"/></svg>
-                </span>
-                <span className="w-10 h-10 rounded-full bg-orange-dark border-2 border-white flex items-center justify-center text-white text-base shadow-sm" aria-hidden="true">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M10 5.172C10 3.782 8.423 2.679 6.5 3c-2.823.47-4.113 6.006-4 7 .08.703 1.725 1.722 3.656 1 1.261-.472 1.855-1.24 2.344-2.5"/><path d="M14.267 5.172c0-1.39 1.577-2.493 3.5-2.172 2.823.47 4.113 6.006 4 7-.08.703-1.725 1.722-3.656 1-1.261-.472-1.855-1.24-2.344-2.5"/><path d="M8 14v.5"/><path d="M16 14v.5"/><path d="M11.25 16.25h1.5L12 17l-.75-.75Z"/><path d="M4.42 11.247A13.152 13.152 0 0 0 4 14.556C4 18.728 7.582 21 12 21s8-2.272 8-6.444c0-1.061-.162-2.2-.493-3.309m-9.243-6.082A8.801 8.801 0 0 1 12 5c.78 0 1.5.108 2.161.306"/><path d="M19 17a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/></svg>
-                </span>
-              </div>
-              <div>
-                <p className="text-sm font-bold text-charcoal">1.532 avalia&ccedil;&otilde;es</p>
-                <p className="text-xs text-charcoal-light">Google Reviews</p>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-2 bg-white px-3.5 py-1.5 rounded-full shadow-sm border border-orange-muted">
-              <Heart size={16} className="text-orange" fill="var(--orange)" />
-              <span className="text-sm font-bold text-charcoal">Nota 4.5</span>
-              <span className="text-xs text-charcoal-light">(Google)</span>
-            </div>
-          </motion.div>
         </motion.div>
 
         <motion.div
