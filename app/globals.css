@@ -1,26 +1,88 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --orange: #E86424;
+  --orange-dark: #C45418;
+  --orange-light: #F4A460;
+  --orange-muted: #F5E3D8;
+  --cream: #FDFBF7;
+  --cream-dark: #F5EDE4;
+  --charcoal: #1F1C18;
+  --charcoal-light: #4A4543;
+  --white: #FFFFFF;
+  --gray-50: #FAF8F5;
+  --gray-100: #F5F0EA;
+  --gray-200: #E8E2DA;
+  --gray-400: #9A9590;
+  --gray-600: #6B6560;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-orange: var(--orange);
+  --color-orange-dark: var(--orange-dark);
+  --color-orange-light: var(--orange-light);
+  --color-orange-muted: var(--orange-muted);
+  --color-cream: var(--cream);
+  --color-cream-dark: var(--cream-dark);
+  --color-charcoal: var(--charcoal);
+  --color-charcoal-light: var(--charcoal-light);
+  --color-white: var(--white);
+  --color-gray-50: var(--gray-50);
+  --color-gray-100: var(--gray-100);
+  --color-gray-200: var(--gray-200);
+  --color-gray-400: var(--gray-400);
+  --color-gray-600: var(--gray-600);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--cream);
+  color: var(--charcoal);
+  font-family: 'Geist', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.font-display {
+  font-family: 'Geist', system-ui, -apple-system, sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cream-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--orange-muted);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--orange-light);
 }

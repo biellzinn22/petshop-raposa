@@ -1,3 +1,12 @@
+## Status do Projeto
+
+- **Hotel & Creche**: removido do site em 2026-09-20. O petshop não oferece esses serviços.
+  - Removido card de serviço em `ServicesSection.tsx`
+  - Removido item do rodapé em `Footer.tsx`
+  - Removido menção do CTA em `FinalCTA.tsx`
+  - Removido da meta description em `layout.tsx`
+  - Removido referência no depoimento da galeria em `GallerySection.tsx`
+
 <!-- BEGIN:nextjs-agent-rules -->
 
 # This is NOT the Next.js you know
