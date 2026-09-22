@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { X, Heart, Sparkles, MessageCircle, Camera } from "lucide-react";
@@ -77,6 +77,13 @@ const fadeUp = {
 
 export default function GallerySection() {
   const [selectedPet, setSelectedPet] = useState<GalleryItem | null>(null);
+
+  useEffect(() => {
+    document.body.style.overflow = selectedPet ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [selectedPet]);
 
   return (
     <section id="gallery" className="py-24 lg:py-32 bg-white relative overflow-hidden">

@@ -38,10 +38,6 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background: var(--cream);
   color: var(--charcoal);

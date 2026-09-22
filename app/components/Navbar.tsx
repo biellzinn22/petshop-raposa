@@ -21,7 +21,7 @@ export default function Navbar() {
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
-    scroller?.scrollTo(href, -80);
+    scroller?.scrollTo(href, -90);
     setIsMobileMenuOpen(false);
   };
 

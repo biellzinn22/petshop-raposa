@@ -28,7 +28,7 @@ export default function Footer() {
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
-    scroller?.scrollTo(href, -80);
+    scroller?.scrollTo(href, -90);
   };
 
   return (

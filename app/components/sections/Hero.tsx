@@ -27,7 +27,7 @@ export default function Hero() {
 
   const handleServicesClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    scroller?.scrollTo("#services", -80);
+    scroller?.scrollTo("#services", -90);
   };
 
   return (
